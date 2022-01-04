@@ -7,17 +7,17 @@ const open = require('gulp-open'); // Opens a URL in a web browser
 const exec = require('child_process').exec; // run command-line programs from gulp
 const execSync = require('child_process').execSync; // command-line reports
 // compile scss into css
-function style(){
- // 1. where is my scss location
-  return gulp.src('./scss/**/*.scss')
- // 2. pass that file throuugh sass compiler
- .pipe(sass().on('error',sass.logError))
- // 3. where we save compiled css 
- .pipe(gulp.dest('./css')) 
+// function style(){
+//  // 1. where is my scss location
+//   return gulp.src('./scss/**/*.scss')
+//  // 2. pass that file throuugh sass compiler
+//  .pipe(sass().on('error',sass.logError))
+//  // 3. where we save compiled css 
+//  .pipe(gulp.dest('./css')) 
  
- // 4. stream changes to all browsers
-   .pipe(browserSync.stream())
-}
+//  // 4. stream changes to all browsers
+//    .pipe(browserSync.stream())
+// }
 
 // function watch(){
 //   browserSync.init({
@@ -79,6 +79,6 @@ exports.deploy = series(git, netlify, netlifyOpen);
 
 
 
-exports.style = style;
-exports.watch = watch;
+//exports.style = style;
+//exports.watch = watch;
 
