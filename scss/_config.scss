@@ -1,0 +1,100 @@
+
+//@extend(223, 212, 164)
+
+$primary-color:#444;
+$secoundary-color:#f1d900;
+$header-color: rgba(124, 106, 106, 1);
+$skill-color:#000;
+$portfolio-color:rgba(1, 32, 29 , 0.7);
+//$about-color:rgb(161, 34, 34); 
+$about-color:rgb(0, 34, 34);
+$about-font:   rgb(166, 178, 176);
+$home-overlay:rgba(0, 34, 34, 0.9);
+$nav-bg:rgba(35, 49, 49, 0.9);
+//rgba(0, 34, 34, 0.9);
+$contact-color:lighten($about-color, 2%);
+$contact-details:darken($about-color, 2%);
+
+$my-photo:url(../img/ali4.jpg);
+//$port-img:url(../img/citypizza.jpg);
+$background-opacity:0.9;
+$font-size-primary:2rem;
+$font-size-secoundary: 1.5rem;
+$primary-font-family:'Armata', sans-serif;
+
+$skill-section:lighten($about-color, 5%);
+$skill-list:lighten($about-color,15%);
+@mixin easeOut {
+  transition: all 0.5s ease-out;  
+}
+
+
+
+// Set Text Color
+/*
+@function set-text-color($color) {
+ @if (lightness($color) > 40){
+     @return #000;
+ }@else{
+     @return #fff;
+ }
+
+}
+*/
+// Media Query Mixins potriat
+@mixin mediaSm {
+    @media screen and (min-width:320px) and (max-width:600px){
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen  and (min-width:601px)  and (max-width:1024px){
+        @content;
+    }
+}
+
+@mixin mediaMd2 {
+    @media screen  and (min-width:1025px)  and (max-width:1224px){
+        @content;
+    }
+}
+
+
+@mixin mediaLg{
+    @media screen and (min-width:769px)  and (max-width:1170px){
+        @content;
+    }
+}
+    @mixin mediaLg2{
+        @media screen and (min-width:1225px) {
+            @content;
+
+    }
+}
+
+
+@mixin mediaXl{
+    @media screen  and (min-width:1171px){
+        @content;
+    }
+}
+@mixin mediahd{
+    @media screen  and (min-width:1900px){
+        @content;
+    }
+}
+
+
+@mixin largscreen {
+  @media screen and (min-width:769px)  {
+      @content;
+  }
+
+}
+
+@mixin tablet {
+    @media screen and (max-width:768px)  {
+        @content;
+    }  
+}

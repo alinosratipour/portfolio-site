@@ -1,0 +1,143 @@
+@import 'config';
+@import 'contact';
+@import 'menu';
+@import 'skills2';
+@import 'about';
+@import 'portfolio';
+@import 'mobile';
+@import 'particles';
+*{
+box-sizing: border-box;
+}
+
+body, html{
+//@include background;    
+background-color:$primary-color;
+color:set-text-color($primary-color);
+height: 100vh;
+margin: 0;
+padding: 0; 
+line-height: 1.5;
+}
+
+
+//nav-lg{
+  #top-nav{
+//background: $header-color;
+background:$nav-bg;
+ height: 70px;
+
+
+.nav-ul-lg{
+display: flex;
+//font-family: 'Alfa Slab One', cursive;
+font-family: 'Armata', sans-serif;
+width: 40%;
+margin: 0 auto;
+margin-top: 5px;;
+padding: 15px;
+font-size: 1.2rem;
+
+.nav-lg{
+flex: 1;
+list-style: none;
+text-align: center;
+margin: 2px;
+height: 40px;
+
+}
+
+.nav-link{
+color: #fff;
+}
+   }
+
+}
+
+//Heading
+h1, h2, h3{
+margin:0;
+font-weight: 400;
+font-family: 'Alfa Slab One', cursive;
+&.heading{
+font-size: 6rem;
+
+ }
+
+}
+
+a{
+color: #fff;
+text-decoration: none;
+}
+
+header{
+position: fixed;
+z-index:4;
+width: 100%;
+
+
+.logo{
+width: 120px;
+height: 120px;
+position: fixed;
+background-image: url('../img/my-logo4.png');
+margin-top: -15px;
+margin-left: 20px;
+background-size: cover;
+
+}
+
+}
+.text-secound{
+color:$secoundary-color;
+
+}
+
+
+.home > img-div img{
+position: relative;
+width: 100%;
+padding: 4rem;
+height: 100vh;
+background-color: rgb(49, 46, 46);
+background-image: url('../img/desktop.jpg');
+background-position: center center;
+background-size: cover;
+
+
+ 
+h1 {
+margin-top:20vh;
+position: relative;
+z-index: 2;
+}
+
+.small-heading{
+z-index: 2;
+position: relative;
+margin-top: -10px;
+font-family: 'Armata', sans-serif;
+}
+
+
+ 
+#overlay{
+//background-color: rgb(70, 3, 6);
+background-color: $home-overlay;
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+z-index: 1;
+}
+
+}
+
+
+/**/
+
+
+

@@ -1,0 +1,349 @@
+// wideScreens
+@include mediaXl {
+
+}
+
+// Desktops and Laptops
+@include mediaLg {
+
+} 
+
+
+@include tablet{
+.nav-bar{visibility: hidden;} 
+.btn-menu{margin-top: -25px;}
+}
+// Tablets and Small Laptops
+/**/
+@include mediaMd {
+
+.about-title{
+    margin-top: -20px;
+}
+.flex{
+display: grid;
+//grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) , minmax(400px,2fr) );
+justify-items: center;
+grid-template-columns: repeat(1,1fr);
+
+
+p{
+    padding: 0 30px 0 30px;  
+    } 
+
+.my-pic{
+background: url('../img/ali4.jpg');
+width: 250px;
+height: 250px;
+background-size: cover;
+border-radius: 50%;
+margin: auto 0 ;
+margin-top: 50px;
+}
+
+
+
+}
+.card{
+p{
+    padding: 0 30px 0 30px;  
+}
+}
+
+.nav-bar{
+margin: 0 auto;
+//width: 65%;
+display: flex;
+
+
+
+}
+.nav-link{
+//flex: 1;
+text-align: left;
+font-size: 1rem;
+
+
+
+
+}
+
+
+.nav-ul-lg{  
+//flex: 2;
+//flex-basis: 100px;
+flex-basis: 60%;
+
+}
+
+
+.skills{
+display: grid;
+grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+}
+
+
+#submitBtn{
+margin-top:10px;
+
+}
+
+
+.home{
+
+.heading{
+    margin-top: 20px;
+    
+    
+    }   
+}
+
+.flex-wrapper{
+display: flex;
+padding-bottom: 8rem;
+flex-wrap: wrap;
+
+.serv-1-decs, .serv-2-decs{
+    width: 100%;
+}
+
+}
+
+
+.flex-wrapper-2{
+display: flex;
+flex-wrap: wrap;
+
+.serv-1-decs, .serv-2-decs{
+    width: 100%;
+    
+    
+}
+
+.serv-1-decs{
+padding-bottom: 60px;  
+}
+
+}
+
+
+
+
+
+} 
+
+// Smart Phones
+@include mediaSm {
+main{
+align-items: center;
+text-align: center;
+.heading{
+line-height: 1;
+margin-bottom: 1rem;
+}
+
+}
+
+ul.menu-nav,
+div.menu-branding {
+float: none;
+width: 100%;
+min-height: 0;
+&.show{
+transform: translate3d(0,0,0);
+
+}
+}
+
+.menu-nav{
+height: 75vh;
+transform: translate3d(-100%,0,0);
+font-size: 24px;
+
+}
+.menu-branding{
+height: 25vh;
+transform: translate3d(100%,0,0);
+
+
+.photo{
+background: url('../img/ali4.jpg');
+width: 120px;
+height: 120px;
+background-size: cover;
+border-radius: 50%;
+
+}
+}
+
+
+.home{
+text-align: left;
+
+}
+
+.text-secound, .ali {font-size: 3.9rem;}//margin-left: -15px; } 
+.small-heading{font-size: 1.4rem;}
+.nav-bar{display: none;} 
+.btn-menu{margin-top: -25px;}
+
+
+
+.contact{
+display: flex;
+flex-direction: column;
+
+}
+
+.details{
+width: 100%;
+order:1;
+padding-top: 3rem; 
+}
+
+.form-container{
+order: 2;;
+}
+
+.about-title{
+margin-top: 0px;
+}
+
+
+
+
+
+.flex{  
+display: grid;
+grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
+justify-items: center;
+
+
+.my-pic{
+background: url('../img/ali4.jpg');
+width: 150px;
+height: 150px;
+background-size: cover;
+border-radius: 50%;
+margin: auto 0 ;
+}
+
+
+.flex,.about-text {
+    width: 100%;
+    font-size: 1rem;
+    margin-top: 60px;
+    line-height: 2;
+    padding: 0 7px 0 7px;
+    font-weight: 200;
+    
+    }
+
+
+}
+
+/*
+.m{
+padding-right: 20px;
+padding-left: 20px;
+text-align:left; 
+}
+*/
+.skills{
+display: grid;
+grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+}
+
+#portfolio{
+padding-top: 0;
+
+}
+.gallery{
+width: 100%;
+font-size: 1.2rem;
+display: grid;
+
+grid-auto-flow: row;
+
+}
+
+.card{
+p{
+padding-left: 19px;
+}   
+}
+
+.gallery-wrapper{
+margin: 0 auto;
+}
+
+
+.flex-wrapper{
+display: flex;
+flex-direction: column;
+padding-bottom: 4rem;
+}
+
+.flex-wrapper-2{
+display: flex;
+flex-direction: column;  
+}
+
+.serv-2-decs, .serv-1-decs{
+width: 100%;
+font-size: 1.2rem;
+font-weight: 200;
+color: $about-font;
+text-align: center;
+
+
+
+}
+
+
+.serv-3, .serv-4, .serv-1, .serv-2{
+text-align: center;
+color: $secoundary-color;
+font-family:$primary-font-family; 
+
+}
+
+.services-3{
+    padding-bottom: 4rem;
+}
+
+.sevices-2{
+padding: 1rem;
+}
+
+
+}
+
+// for small laptop
+@include mediaMd2{
+    .nav-link{
+        //flex: 1;
+        text-align: left;
+        font-size: 1rem;
+        
+        
+        
+        
+        }
+        
+
+}
+
+@include mediaLg2{
+
+}
+
+//for larger screen other then tablents
+
+@include largscreen{
+.btn-menu{
+    visibility: hidden;
+}
+}
+
+

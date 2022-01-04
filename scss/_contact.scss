@@ -1,0 +1,190 @@
+#contact{
+height: auto;
+width: 90%;
+margin: 0 auto;
+font-family: 'Armata', sans-serif;
+margin-top: 60px;
+padding-bottom: 40px;
+
+}
+
+.contact{
+width: 100%;
+height: auto;
+background:$contact-color ;
+font-size: 1rem;
+display: flex;
+margin-bottom: 0px;
+}
+.form-container{
+width: 80%;
+text-align: center;
+color: grey;
+margin: 0 auto;
+margin-top:100px;
+flex: 1;
+
+
+}
+.input-txt{
+font-size: 1rem;
+
+}
+.input-txt2{
+font-size: 1.3rem;
+
+
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: rgb(194, 184, 184);
+opacity: 1; /* Firefox */
+
+
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: rgb(194, 184, 184);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+color: rgb(194, 184, 184);
+}
+
+.form-container input{
+border-radius: 10px;
+background: transparentize($about-font,  0.7);
+width: 90%;
+padding:20px;
+padding-left: 50px;
+border-style: none;
+margin: 6px;
+outline: none;
+
+}
+
+.form-container textarea{
+width: 90%;
+border-radius: 10px;
+padding: 30px;
+padding-left: 50px;
+background: transparentize($about-font,  0.7);
+border-style: none;
+outline: none;
+margin-top: 6px;
+margin-left: 5px;
+
+}
+
+.form-container p {
+padding: 0;
+margin: 0;
+
+}
+
+.details{
+background: $contact-details;
+width: calc(50% + 50px) ;
+text-align: center;
+flex: 1;
+padding-top: 190px;
+padding-bottom: 10px;
+
+
+
+.icons{
+margin-top: 1rem;
+a {
+padding: 0.5rem;
+
+:hover{
+  color: $secoundary-color;
+  @include easeOut();
+  } 
+
+  }
+} 
+
+
+}
+
+.details p{
+font-family: 'Bree Serif', serif;
+font-size: 2.5rem; 
+color:$about-font;
+
+}
+.details h2{
+font-size: 2.5rem;
+font-weight:bolder; 
+text-transform: uppercase;
+color: #fff;
+
+}
+
+
+#submitBtn{
+width: 90%;
+padding: 1.2rem;
+margin-top: 10px;
+margin-bottom: 5px;
+border: none;
+color: #fff;
+background: darken($about-font, 30%);
+transition-property: background;
+transition-duration: .9s;
+font-size: 1rem;
+border-radius: 5px;
+margin-left: 5px;
+}
+#submitBtn:hover{
+background: darken($about-font, 20%);
+cursor: pointer;
+}
+
+.phone{
+font-size: 3rem;
+color: $about-font;
+}
+.or{
+font-size: 2rem;
+color: $about-font;
+}
+
+
+.icon {
+padding: 10px;
+color: white;
+min-width: 40px;
+text-align: center;
+}
+.input-icons i { 
+position: absolute; 
+margin-left: 10px;
+margin-top: 10px;
+
+} 
+
+.input-icons { 
+display: flex;
+
+} 
+
+//form error handeling
+.form-msg {
+font-size: 1.1rem;
+text-align: center;
+width: 90%;
+
+font-family: 'Armata', sans-serif;
+margin-top: 20px;
+}
+
+.form-error{
+color: red;
+
+}
+.form-success{
+color: green;
+}
+.input-error{
+box-shadow: 0px 0px 9px 1px rgb(248, 5, 5);
+}

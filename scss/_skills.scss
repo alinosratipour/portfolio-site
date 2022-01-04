@@ -1,0 +1,112 @@
+.skills{
+width: 100%;
+height: auto;
+background:$skill-section;
+color: $skill-color;
+font-size: 2.5rem;
+text-align: center;
+display: grid;
+grid-template-columns: repeat(3,1fr );
+font-family: 'Armata', sans-serif;
+
+}
+
+
+.loader{
+opacity: 0;
+transform: rotateY(20px);
+transition: 0.5s all ease-in-out;
+}
+
+.loader2{
+opacity: 0;
+transform: rotateY(20px);
+transition: 0.5s all ease-in-out;
+}
+
+.appear{
+opacity: 1;
+transform: rotateY(0px);
+
+}
+
+.head-title{
+grid-column:1/-1;
+padding-top: 4rem;
+}
+.mybox{
+height: auto;
+font-size: 1.2rem;
+width: 70%;
+margin: 0 auto;
+
+
+h6{
+font-size: 1.5rem;
+text-align: center;
+  
+
+}
+}
+.skills{
+width: 100%;
+height: auto;
+background:$skill-section;
+color: $skill-color;
+font-size: 2.5rem;
+text-align: center;
+display: grid;
+grid-template-columns: repeat(3,1fr );
+font-family: 'Armata', sans-serif;
+padding-top: 2rem;
+padding-bottom: 2rem;
+}
+
+
+.head-title{
+  grid-column:1/-1;
+
+  
+}
+.mybox{
+height: auto;
+font-size: 1.2rem;
+width: 70%;
+margin: 0 auto;
+
+
+h6{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 10px;
+  
+
+}
+.skill-name{
+  background-color:#000;
+  text-align: center;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius:5px ;
+  font-size: 1rem;
+  color: white;
+  margin-right: 50px;
+
+
+}
+
+.skill-list{
+    margin-top: -40px;
+}
+
+ul li{
+  text-decoration: none;
+  list-style: none;
+  text-align: left;
+}
+
+
+}.fab{
+font-size: 6rem;
+margin-top: 50px;
+}

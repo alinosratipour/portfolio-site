@@ -1,0 +1,72 @@
+.wrapp{
+width: 100%;
+background:$skill-section;
+margin: 0 auto;
+}
+.skills{
+width: 90%;
+height: auto;
+//background:$skill-section;
+color: $skill-color;
+font-size: 2.5rem;
+text-align: center;
+display: flex;
+font-family: 'Armata', sans-serif;
+margin: 0 auto;
+
+}
+
+
+ul li{
+text-decoration: none;
+list-style: none;
+text-align: left;
+}
+
+.skill-name{
+background-color:$skill-list;
+text-align: center;
+margin: 5px;
+border-radius:5px ;
+font-size: 1rem;
+color: white;
+margin-right: 50px;
+padding: 4px;
+text-transform: uppercase;
+}
+
+.mybox{
+flex: 1;
+}
+
+h6{
+font-size: 1.5rem;
+text-align: center;
+margin-top: 10px;
+color: rgb(166, 178, 176);
+}
+
+.fab{
+font-size: 6rem;
+margin-top: 50px;
+color: rgb(177, 177, 177);
+}
+
+
+.softskill{
+  font-size: 6rem;
+margin-top: 50px;
+color: rgb(177, 177, 177);   
+}
+
+.head-title{
+width: 100%;
+text-align: center;
+padding-top: 80px;
+font-size: 2.5rem;
+background:$skill-section;
+color: rgb(166, 178, 176);
+text-transform: uppercase;
+
+}
+
