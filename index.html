@@ -12,7 +12,15 @@
     <link href="https://fonts.googleapis.com/css?family=Abel|Armata|Bree+Serif|Coda+Caption:800&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <title>Personal Portfolio</title>
-  
+  <script>
+      function validateForm() {
+  let x = document.forms["contact"]["name"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+      </script>
     
 </head>
 <body id="bg-img">
@@ -354,7 +362,7 @@
     </div>
     <div class="form-container">
    
-       <form name="contact"  method="POST" data-netlify="true" id="contact" >
+       <form name="contact"  method="POST" data-netlify="true" id="contact"  onsubmit="return validateForm()">
        
          <p class="input-icons" >
             
