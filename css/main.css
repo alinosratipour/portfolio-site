@@ -340,7 +340,9 @@ h6 {
 .what-i-do {
   margin-top: 50px;
   text-align: center;
-  font-size: 2.5rem; }
+  font-size: 2.5rem; 
+color: #a6b2b0;
+}
 
 .services {
   margin-top: 60px;
