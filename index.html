@@ -361,21 +361,21 @@
         </div>
     </div>
     <div class="form-container">
-   
-       <form name="contact"  method="POST" data-netlify="true" id="contact"  onsubmit="return validateForm()">
+   <!-- onsubmit="return validateForm()" -->
+       <form name="contact"  method="POST" data-netlify="true" id="contact"  >
        
          <p class="input-icons" >
             
            <!--<label for="">Name</label>-->
            
-           <input  type="text" id="user-name" name="name"  class="input-txt"  placeholder="Name">
+           <input  type="text" id="user-name" name="name" required class="input-txt"  placeholder="Name">
            <i class="fa fa-user icon"></i>
            
          </<h2>  
 
          <p class="input-icons">
           <!--<label for="">Email</label>---> 
-           <input type="email" id="user-email" name="email" required class="input-txt "  placeholder="Email">
+           <input type="email" id="user-email" name="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required class="input-txt "  placeholder="Email">
            <i class="fa fa-envelope icon"></i>
          </p>  
          <p class="input-icons">
